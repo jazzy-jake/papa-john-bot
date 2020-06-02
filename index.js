@@ -1,0 +1,84 @@
+const Discord = require('discord.js');
+const client = new Discord.Client();
+const userID = 'JYDM';
+const johnMSG = 'JOHN';
+const botID = 'papa john bot';
+
+client.once('ready', () => {
+	console.log('Ready!');
+});
+
+client.login('TOKEN GOES HERE');
+
+client.on('message', message => {
+	if (message.author.username === userID) {
+		const random = (Math.random());
+		const fixedrandom = random.toFixed(2);
+		console.log(fixedrandom);
+		if (fixedrandom < 0.05) {
+			message.react('713436461906788395');
+			const channel = client.channels.cache.get('717429806245085315');
+			channel.send('Reacted with <:niceJohn:713436461906788395> and a random value of ' + fixedrandom);
+		}
+		else if (fixedrandom > 0.95) {
+			message.react('713435859348619427');
+			const channel = client.channels.cache.get('717429806245085315');
+			channel.send('Reacted with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom);
+		}
+		else if (fixedrandom == 0.69) {
+			message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+		}
+		else {
+			const channel = client.channels.cache.get('717429806245085315');
+			channel.send('Reacted with no emote and a random value of ' + fixedrandom);
+		}
+	}
+	if (message.content.toUpperCase().includes (johnMSG)) {
+		if (message.author.username != botID) {
+			const random = (Math.random());
+			const fixedrandom = random.toFixed(2);
+			console.log(fixedrandom);
+			if (fixedrandom < 0.2) {
+				message.react('713436461906788395');
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with <:niceJohn:713436461906788395> and a random value of ' + fixedrandom);
+			}
+			else if (fixedrandom > 0.8) {
+				message.react('713435859348619427');
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom);
+			}
+			else if (fixedrandom == 0.69) {
+				message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+			}
+			else {
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with no emote and a random value of ' + fixedrandom);
+			}
+		}
+	}
+	if (message.content === '<@!148130944547553281>') {
+		if (message.author.username != botID) {
+			const random = (Math.random());
+			const fixedrandom = random.toFixed(2);
+			console.log(fixedrandom);
+			if (fixedrandom < 0.2) {
+				message.react('713436461906788395');
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with <:niceJohn:713436461906788395> and a random value of ' + fixedrandom);
+			}
+			else if (fixedrandom > 0.8) {
+				message.react('713435859348619427');
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom);
+			}
+			else if (fixedrandom == 0.69) {
+				message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+			}
+			else {
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted with no emote and a random value of ' + fixedrandom);
+			}
+		}
+	}
+});
