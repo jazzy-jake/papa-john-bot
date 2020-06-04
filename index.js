@@ -8,7 +8,7 @@ client.once('ready', () => {
 	console.log('Ready!');
 });
 
-client.login('PUT TOKEN HERE');
+client.login('TOKEN GOES HERE');
 
 client.on('message', message => {
 	if (message.author.username === userID) {
@@ -28,7 +28,14 @@ client.on('message', message => {
 			channel.send('Reacted to message sent by ' + messageauth + ' with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
 		}
 		else if (fixedrandom == 0.69) {
-			message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+			const nicerandom = (Math.random());
+			console.log('nicerandom value was ' + nicerandom);
+			if (nicerandom < 0.33) {
+				message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+				const channel = client.channels.cache.get('717429806245085315');
+				channel.send('Reacted to message sent by ' + messageauth + ' with **a wild baywatch John** and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
+				channel.send('*nice*');
+			}
 		}
 		else {
 			const channel = client.channels.cache.get('717429806245085315');
@@ -53,7 +60,14 @@ client.on('message', message => {
 				channel.send('Reacted to message sent by ' + messageauth + ' with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
 			}
 			else if (fixedrandom == 0.69) {
-				message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+				const nicerandom = (Math.random());
+				console.log('nicerandom value was ' + nicerandom);
+				if (nicerandom < 0.33) {
+					message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+					const channel = client.channels.cache.get('717429806245085315');
+					channel.send('Reacted to message sent by ' + messageauth + ' with **a wild baywatch John** and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
+					channel.send('*nice*');
+				}
 			}
 			else {
 				const channel = client.channels.cache.get('717429806245085315');
@@ -79,7 +93,14 @@ client.on('message', message => {
 				channel.send('Reacted to message sent by ' + messageauth + ' with <:ponytailJohn:713435859348619427> and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
 			}
 			else if (fixedrandom == 0.69) {
-				message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+				const nicerandom = (Math.random());
+				console.log('nicerandom value was ' + nicerandom);
+				if (nicerandom < 0.33) {
+					message.reply('**you got 0.69!** *nice* https://cdn.discordapp.com/attachments/717429806245085315/717434553089785856/Baywatch_John.png');
+					const channel = client.channels.cache.get('717429806245085315');
+					channel.send('Reacted to message sent by ' + messageauth + ' with **a wild baywatch John** and a random value of ' + fixedrandom + ' at ' + messagetime.toUTCString());
+					channel.send('*nice*');
+				}
 			}
 			else {
 				const channel = client.channels.cache.get('717429806245085315');
